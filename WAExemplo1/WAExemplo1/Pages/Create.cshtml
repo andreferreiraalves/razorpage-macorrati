@@ -1,0 +1,20 @@
+﻿@page
+@model WAExemplo1.Pages.CreateModel
+@{
+    ViewData["Title"] = "Criar";
+}
+
+<html>
+<body>
+    <p>Inform o seu nome</p>
+
+    <div asp-validation-summary="All"></div>
+
+    <form method="post">
+        <div>Nome: <input asp-for="Cliente.Nome" /></div>
+        <br />
+        <input type="submit" />
+    </form>
+</body>
+</html>
+
