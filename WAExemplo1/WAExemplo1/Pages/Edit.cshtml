@@ -1,0 +1,22 @@
+﻿@page "{id:int}"
+@model WAExemplo1.Pages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <input asp-for="Cliente.Id" type="hidden" />
+    <div>
+        <label asp-for="Cliente.Nome" />
+
+        <div>
+            <input asp-for="Cliente.Nome" />
+            <span asp-validation-for="Cliente.Nome"></span>
+        </div>
+    </div>
+    <div>
+        <button type="submit">Salvar</button>
+    </div>
+</form>
